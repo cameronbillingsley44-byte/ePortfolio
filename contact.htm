@@ -1,70 +1,41 @@
-<!DOCTYPE HTML>
-
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>ePortfolio - Cameron L.Billingsley</title>
-  <link rel="stylesheet" type="text/css" href="eportfolio.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div id="wrapper">
+  <nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="resume.html">Resume</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+<section class="contact">
+<h1>Contact Me</h1>
 
-        <header>
-          <h1>Contact Information</h1>
+<form action="https://formspree.io/f/mlgpqqnr" method="POST">
 
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+ <script>
+document.querySelector("form").addEventListener("submit", function() {
+alert("Your message has been sent!");
+});
+</script>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<img src="images/profile.jpg" alt="My Profile Photo">
+<label for="message">Message:</label>
+<textarea id="message" name="message" rows="5" required></textarea>
 
-
-        </header>
-        <nav>
-           <ul>
-              <li><a href="index.htm" title="welcome to Cameron's ePortfoilo">Home</a></li>
-              <li><a href="about.htm" target="_blank" title="Get to know Cameron L. Billingsley">About Me</a></li>
-              <li><a href="project.htm" target="_blank" title="View a galley of projects">Projects</a></li>
-              <li><a href="resume.htm" target="_blank" title="Resume - Cameron L. Billingsley">Resume</a></li>
-              <li><a href="contact.htm" target="_blank" title="Contact for more information.">Contact Me</a></li>
-
-
-           </ul>
-        </nav>
-
-        <main>
-
-
-
-
-
-
-
-        </main>
-
-        <footer>
-
-
-        </footer>
-
-
-
-
-
-
-
-
-
-
-       </div>
-
-
-
-
-
-
-
-
-
-
-
-
+<button type="submit">Send Message</button>
+</form>
+</section>
+</ul>
+</nav>
 </body>
-
 </html>
